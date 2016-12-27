@@ -1,0 +1,161 @@
+{
+	"match":{
+		"0":{
+			"left":{
+					"id":"img1",					
+					"src":"1.jpg",
+					"country":"哥伦比亚 "	
+			},
+			"center":{
+					
+					"cor":"南美预选",					
+					"p":[
+							{"grade1":"0"},
+							{"icon":"-"},
+							{"grade2":"0"}
+					],
+					"now":"完场"
+			},
+			"right":{
+					"id":"img2",					
+					"src":"2.jpg",
+					"country":"智利 "	
+			}
+		
+		},
+		"1":{
+			"left":{
+					"id":"img3",					
+					"src":"3.jpg",
+					"country":"乌拉圭 "	
+			},
+			"center":{
+					
+					"cor":"南美预选",					
+					"p":[
+							{"grade1":"2"},
+							{"icon":"-"},
+							{"grade2":"1"}
+					],
+					"now":"视频直播中"
+			},
+			"right":{
+					"id":"img4",					
+					"src":"4.jpg",
+					"country":"厄瓜多尔 "	
+			}
+		
+		},
+		"2":{
+			"left":{
+					"id":"img5",					
+					"src":"5.jpg",
+					"country":"巴拉圭 "	
+			},
+			"center":{
+					
+					"cor":"南美预选",					
+					"p":[
+							{"grade1":"1"},
+							{"icon":"-"},
+							{"grade2":"0"}
+					],
+					"now":"视频直播中"
+			},
+			"right":{
+					"id":"img6",					
+					"src":"6.jpg",
+					"country":"秘鲁 "	
+			}
+		
+		},
+		"3":{
+			"left":{
+					"id":"img7",					
+					"src":"7.jpg",
+					"country":"委内瑞拉 "	
+			},
+			"center":{
+					
+					"cor":"南美预选",					
+					"p":[
+							{"grade1":"2"},
+							{"icon":"-"},
+							{"grade2":"0"}
+					],
+					"now":"视频直播中"
+			},
+			"right":{
+					"id":"img8",					
+					"src":"8.jpg",
+					"country":"玻利维亚 "	
+			}
+		},
+		"4":{
+			"left":{
+					"id":"img9",					
+					"src":"9.jpg",
+					"country":"巴西 "	
+			},
+			"center":{
+					
+					"cor":"南美预选",					
+					"p":[
+							{"grade1":"0"},
+							{"icon":"-"},
+							{"grade2":"0"}
+					],
+					"now":"视频直播中"
+			},
+			"right":{
+					"id":"img10",					
+					"src":"10.jpg",
+					"country":"阿根廷 "	
+			}
+		},
+		"5":{
+			"left":{
+					"id":"img9",					
+					"src":"11.jpg",
+					"country":"日本 "	
+			},
+			"center":{
+					
+					"cor":"18:20 友谊赛",					
+					"p":[
+							{"grade1":"0"},
+							{"icon":"-"},
+							{"grade2":"0"}
+					],
+					"now":"视频直播中"
+			},
+			"right":{
+					"id":"img10",					
+					"src":"2.jpg",
+					"country":"阿根廷 "	
+			}
+		},
+				"5":{
+			"left":{
+					"id":"img9",					
+					"src":"11.jpg",
+					"country":"日本 "	
+			},
+			"center":{
+					
+					"cor":"18:20 友谊赛",					
+					"p":[
+							{"grade1":"0"},
+							{"icon":"-"},
+							{"grade2":"0"}
+					],
+					"now":"视频直播中"
+			},
+			"right":{
+					"id":"img10",					
+					"src":"2.jpg",
+					"country":"阿根廷 "	
+			}
+		}
+	}
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrap 101 Template</title>
+
+		<!-- Bootstrap -->
+		<link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body ng-app="myModule" ng-controller="myController">
+		
+		<nav class="navbar navbar-default daohang" role="navigation">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+    				<a class="navbar-brand glyphicon glyphicon-leaf" href="#"></a>
+      				<a class="navbar-brand" href="#">Ace Admin</a>
+    			</div>
+	  			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	  				<ul class="nav navbar-nav navbar-right">
+       					<li class="renwu">
+       						<a href="#">
+       							<span class="glyphicon glyphicon-tasks"></span>
+       							<span>4</span>
+       						</a>
+       					</li>
+       			 		<li class="lingdang">
+       			 			<a href="#">
+       			 				<span class="glyphicon glyphicon-bell"></span>
+       			 				<span>8</span>
+       			 			</a>
+       			 		</li>
+       			 		<li class="youjian">
+       			 			<a href="#">
+       			 				<span class="glyphicon glyphicon-envelope"></span>
+       			 				<span>5</span>
+       			 			</a>
+       			 		</li>
+        				<li class="dropdown">
+          					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Welcome <span class="caret"></span></a>
+          					<ul class="dropdown-menu" role="menu">
+            					<li>
+            						<a href="#">
+            							<span class="glyphicon glyphicon-asterisk"></span>Setting
+            						</a>
+            					</li>
+            					<li>
+            						<a href="#">
+            							<span class="glyphicon glyphicon-user"></span>Profile
+            						</a>
+            					</li>
+            					
+            					<li class="divider"></li>
+            					<li>
+            						<a href="#">
+            							<span class="glyphicon glyphicon-off"></span>Logout
+            						</a>
+            					</li>
+            					
+          					</ul>
+        				</li>
+      				</ul>
+	  			</div>
+		</nav>
+		<div class="row sNav">
+  			<div class="col-md-2">
+  				<button type="button" class="btn btn-success anniu">
+					<span class="glyphicon glyphicon-signal"></span>
+				</button>
+				<button type="button" class="btn btn-primary anniu">
+					<span class="glyphicon glyphicon-pencil"></span>
+				</button>
+				<button type="button" class="btn btn-warning anniu">
+					<span class="glyphicon glyphicon-gift"></span>
+				</button>
+				<button type="button" class="btn btn-danger anniu">
+					<span class="glyphicon glyphicon-cog"></span>
+				</button>
+  			</div>
+  			<div class="col-md-10">
+  				<span class="glyphicon glyphicon-home"></span>
+				<a href="javascript:;">Home</a>
+				<span>&gt;</span>
+				<a href="javascript:;">Tables</a>
+				<span>&gt;</span>
+				<span>Simple&Dynamic</span>
+				<form class="form-inline pull-right" role="form">
+  					<div class="form-group ">
+   			 			<label class="sr-only" for="exampleInputEmail2">Email address</label>
+    					<input type="text" class="form-control"  placeholder="Search..." ng-model="searchText">
+  					</div>
+				</form>
+  			</div>
+		</div>
+		<div class="row content">
+  			<div class="col-md-2">
+  				<ul>
+  					<li>
+  						<a href="#/kongzhitai"><span class="glyphicon glyphicon-dashboard"></span>北京好玩地</a>
+  					</li>
+  					<li>
+  						<a href="#/wenzipaiban"><span class="glyphicon glyphicon-text-width"></span>附近的地</a>
+  					</li>
+  					<li>
+  						<a href="#/UIzujian"><span class="glyphicon glyphicon-magnet"></span>UI组件</a>
+  					</li>
+  					<li>
+  						<a href="#/biaoge"><span class="glyphicon glyphicon-list"></span>表格</a>
+  					</li>
+  					<li>
+  						<a href="#/biaodan"><span class="glyphicon glyphicon-edit"></span>表单</a>
+  					</li>
+  					<li>
+  						<a href="#/chajian"><span class="glyphicon glyphicon-folder-close"></span>插件</a>
+  					</li>
+  					<li>
+  						<a href="#/rili"><span class="glyphicon glyphicon-calendar"></span>日历</a>
+  					</li>
+  					<li>
+  						<a href="#/xiangche"><span class="glyphicon glyphicon-picture"></span>相册</a>
+  					</li>
+  					<li>
+  						<a href="#/more"><span class="glyphicon glyphicon-link"></span>更多页面</a>
+  					</li>
+  				</ul>
+  			</div>
+  			
+  			<div class="col-md-10 showInfo">
+  				<div class="info">
+  					<table border="1" class="zhuozi1">
+  						<tr>
+  							<td>编号</td>
+  							<td>店名</td>
+  							<td>类型</td>
+  							<td>原价</td>
+  							<td>现价</td>
+  							<td>活动</td>
+  						</tr>
+  						<tr ng-repeat="shop in shops | filter:searchText">
+  							<td>{{shop.goodsId}}</td>
+  							<td>{{shop.goodsName}}</td>
+  							<td>{{shop.classify}}</td>
+  							<td>{{shop.price}}</td>
+  							<td>{{shop.currentprice}}</td>
+  							<td>{{shop.goodsDesc}}</td>
+  						</tr>
+  					</table>
+  				</div>
+  				<div class="info">
+  					<table border="1" class="zhuozi1">
+  						<tr>
+  							<td>编号</td>
+  							<td>店名</td>
+  							<td>类型</td>
+  							<td>原价</td>
+  							<td>现价</td>
+  							<td>活动</td>
+  						</tr>
+  						<tr ng-repeat="near in nears | filter:searchText">
+  							<td>{{near.goodsId}}</td>
+  							<td>{{near.goodsName}}</td>
+  							<td>{{near.classify}}</td>
+  							<td>{{near.price}}</td>
+  							<td>{{near.currentprice}}</td>
+  							<td>{{near.goodsDesc}}</td>
+  						</tr>
+  					</table>
+  				</div>
+  				<div class="info">我是文字组件</div>
+  				<div class="info" style="display:block">
+	  				<span>Tables</span>
+	  				<span>&gt;&gt;Static&Dynamic Tables</span>
+	  				<table border="1" class="zhuozi1">
+	  					<tr>
+	  						<td><input type="checkbox" name="" id="" value="" /></td>
+	  						<td>Domain</td>
+	  						<td>Price</td>
+	  						<td>Clicks</td>
+	  						<td>Update</td>
+	  						<td>Status</td>
+	  						<td></td>
+	  					</tr>
+	  					<tr ng-repeat="pro in products">
+	  						<td><input type="checkbox"/></td>
+	  						<td>{{pro.Domain}}</td>
+	  						<td>{{pro.Price}}</td>
+	  						<td>{{pro.Clicks}}</td>
+	  						<td>{{pro.Update}}</td>
+	  						<td>{{pro.Status}}</td>
+	  						<td>
+	  							<button type="button" class="btn btn-success anniu">
+									<span class="glyphicon glyphicon-ok"></span>
+								</button>
+								<button type="button" class="btn btn-primary anniu">
+									<span class="glyphicon glyphicon-edit"></span>
+								</button>
+								<button type="button" class="btn btn-warning anniu">
+									<span class="glyphicon glyphicon-trash"></span>
+								</button>
+								<button type="button" class="btn btn-danger anniu">
+									<span class="glyphicon glyphicon-flag"></span>
+								</button>
+	  						</td>
+	  					</tr>
+	  				</table>
+	  				<p class="haonan">
+	  					<span class="glyphicon glyphicon-hand-right"></span>Table Inside a Modal Box
+	  				</p>
+	  				<p class="wuyu">Jquery dataTables</p>
+	  				<table border="1" class="zhuozi2">
+	  					<tr>
+	  						<td><input type="checkbox" name="" id="" value="" /></td>
+	  						<td ng-click="sortData('Domain')">
+	  							<div ng-class="getSortClass('Domain')"></div>Domain
+	  						</td>
+	  						<td ng-click="sortData('Price')">
+	  							<div ng-class="getSortClass('Price')"></div>Price
+	  						</td>
+	  						<td ng-click="sortData('Clicks')">
+	  							<div ng-class="getSortClass('Clicks')"></div>Clicks
+	  						</td>
+	  						<td ng-click="sortData('Update')">
+	  							<div ng-class="getSortClass('Update')"></div>Update
+	  						</td>
+	  						<td ng-click="sortData('Status')">
+	  							<div ng-class="getSortClass('Status')"></div>Status
+	  						</td>
+	  						<td></td>
+	  					</tr>
+	  					<tr ng-repeat="pru in goods | orderBy:sortColumn:reverseSort | filter:searchText">
+	  						<td><input type="checkbox" name="" id="" value="" /></td>
+	  						<td>{{pru.Domain}}</td>
+	  						<td>{{pru.Price}}</td>
+	  						<td>{{pru.Clicks}}</td>
+	  						<td>{{pru.Update}}</td>
+	  						<td>{{pru.Status}}</td>
+	  						<td>
+	  							<button type="button" class="btn btn-success anniu" ng-click="incrementLikes(pru)">
+									<span class="glyphicon glyphicon-zoom-in"></span>
+								</button>
+								<button type="button" class="btn btn-primary anniu">
+									<span class="glyphicon glyphicon-pencil"></span>
+								</button>
+								<button type="button" class="btn btn-warning anniu" ng-click="incrementDislikes(pru)">
+									<span class="glyphicon glyphicon-trash"></span>
+								</button>
+	  						</td>
+	  					</tr>
+	  				</table>
+  				</div>
+  				<div class="info">我是表单</div>
+  				<div class="info">我是插件</div>
+  				<div class="info">我是日历</div>
+  				<div class="info">我是相册</div>
+  				<div class="info">我是更多页面</div>
+  			</div>
+		</div>
+		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="node_modules/angular/angular.js" type="text/javascript" charset="utf-8"></script>
+		<script src="node_modules/angular-route/angular-route.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>
+

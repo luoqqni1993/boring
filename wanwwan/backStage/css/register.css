@@ -1,0 +1,26 @@
+*{margin:0px;padding:0px;}
+#content{height:688px;width:1263px;background:url(../img/drak-1.png) no-repeat 140px 47px #fafafa;}
+#content .paragraph{float:left;font-size:23px;color:#333333;margin-top:57px;margin-left:454px;}
+#content .form{height:473px;width:1000px;border:1px solid #dadada;float:left;background:#ffffff;margin-top:50px;margin-left:132px;}
+#content .left{float:left;width:700px;height:374px;}
+#content .left ul{float:left;margin-top:50px;margin-left:40px;}
+#content .left li{width:645px;height:35px;list-style-type:none;margin-top:30px;font-size:12px;color:#333333;line-height:35px;}
+#content .left span{float:left;}
+#content .left input{float:left;height:34px;width:262px;border-color:#dddddd;padding-left:28px;}
+#content .left .a1,#content .left .a4{margin-left:14px;}
+#content .left .b1{height:35px;background:#eef9ff;border:1px solid #ddf3ff;width:270px;padding-left:10px;}
+#content .left #code{float:left;35px;font-size:21px;}
+#content .left .b2{height:35px;background:#eef9ff;border:1px solid #ddf3ff;width:270px;padding-left:10px;margin-left:1px;}
+#content .left .c1{background:url(../img/zc1-1.png) no-repeat 6px 8px;}
+#content .left .c2{background:url(../img/zc2-1.png) no-repeat 6px 8px;}
+#content .left .c3{background:url(../img/zc2-1.png) no-repeat 6px 8px;}
+#content .left .c4{background:url(../img/zc3-1.png) no-repeat 6px 8px;width:190px;}
+#content .left .chk{float:left;height:12px;width:12px;margin-left:110px;margin-top:60px;}
+#content .left .d1{font-size:12px;color:#878787;margin-top:60px;}
+#content .left .d2{font-size:12px;color:#0088cc;margin-top:60px;float:left;text-decoration:none;margin-left:10px;width:481px;}
+#content .left .d3{font-size:16px;color:#ffffff;float:left;height:40px;width:272px;background:#0487df;line-height:40px;text-decoration:none;text-align:center;margin-left:110px;margin-top:20px;}
+#content .center{float:left;height:374px;width:1px;background:url(../img/xd-1.png) no-repeat center center;margin-top:40px;}
+#content .right .e1{float:left;font-size:12px;color:#919191;margin-top:54px;margin-left:30px;width:267px;}
+#content .right .e2{float:left;font-size:12px;color:#919191;margin-top:29px;margin-left:30px;width:267px;}
+#content .right .e3{float:left;font-size:12px;color:#ffffff;margin-top:29px;margin-left:30px;height:23px;width:98px;border:1px solid #f34301;line-height:23px;text-decoration:none;text-align:center;background:url(../img/xd1-1.png) no-repeat 6px 4px #f76a26;}
+#content .copyRight{float:left;font-size:12px;color:#948694;margin-top:35px;margin-left:416px;}

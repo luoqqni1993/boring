@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		window.onload=function(){
+			var oCode=document.getElementById("code");
+			var oRegister=document.getElementsByClassName("d3")[0];
+			var oUser=document.getElementsByClassName("c1")[0];
+			var oPsw=document.getElementsByClassName("c2")[0];
+			var oRpsw=document.getElementsByClassName("c3")[0];
+			var oTest=document.getElementsByClassName("c4")[0];
+			var arr=["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+			var crr=["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"];
+			var str="";
+			for(var i=0;i<4;i++){
+				var clr="#";
+				for(var j=0;j<6;j++){
+					var n=Math.floor(Math.random()*crr.length);
+					clr+=crr[n];	
+			}
+			var m=Math.floor(Math.random()*arr.length);
+			str+=arr[m];
+			}
+			oCode.innerHTML=str;
+			oCode.style.color=clr;
+			oRegister.onclick=function(){
+				var iUser=oUser.value;
+				var iPsw=oPsw.value;
+				var iRpsw=oRpsw.value;
+				var iTest=oTest.value;
+				var iCode=oCode.innerText;
+				var re1=/^[a-zA-Z]\w{5,15}$/;
+				var re2=/\w{6,}/;
+				if(re1.test(iUser)){
+					if(re2.test(iPsw)&&re2.test(iRpsw)){
+						if(iPsw==iRpsw){
+							if(iTest==iCode){
+								createCookie(iUser,iPsw,setCookieTime(3));
+								alert("注册成功");
+								window.open("Logins.html");
+							}else{
+								alert("请输入正确的验证码!")
+							}
+						}else{
+							alert("前后输入密码不相同!");
+						}
+					}else{
+						alert("请输入合适的密码字符!");
+					}
+				}else{
+					alert("请输入正确格式的账号格式!");
+				}
+			}
+		}
+			
+		</script>
+	</head>
+	<body>
+		<div id="content">
+			<span class="paragraph">欢迎注册</span>
+			<div class="form">
+				<div class="left">
+					<ul>
+						<li>
+							<span class="a1">账户名:</span>
+							<input class="c1" type="text">
+							<span class="b1">3-10位中/英文、数字和下划线</span>
+						</li>
+						<li>
+							<span class="a2">设置密码:</span>
+							<input class="c2" type="password">
+							<span class="b1">请输入密码</span>
+						</li>
+						<li>
+							<span class="a3">确认密码:</span>
+							<input class="c3" type="password">
+							<span class="b1">请再次输入密码</span>
+						</li>
+						<li>
+							<span class="a4">验证码:</span>
+							<input class="c4" type="text\">
+							<span id="code"></span>
+							<span class="b2">请输入验证码,区分大小写</span>
+						</li>
+					</ul>
+					<input type="checkbox" class="chk" checked="checked"/>
+					<span class="d1">我已阅读并同意</span>
+					<a class="d2" href="javascript:;">《服务协议》</a>
+					<a href="javascript:;" class="d3">立即注册</a>
+				</div>
+				<span class="center"></span>
+				<div class="right">
+					<span class="e1">我已有账户</span>
+					<span class="e2">现在就</span>
+					<a class="e3" href="javascript:;">立即登入</a>
+				</div>
+			</div>
+			<span class="copyRight">Copyright © 2007-2014 Aokang.cn All Rights Reserved 浙ICP备05037900号</span>
+		<div>
+	</body>
+</html>

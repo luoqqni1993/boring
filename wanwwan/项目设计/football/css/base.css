@@ -1,0 +1,178 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dd,
+dl,
+dt,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+@media (max-width: 962px) {
+  html {
+    font-size: 150px;
+  }
+}
+@media (max-width: 952px) {
+  html {
+    font-size: 148.4375px;
+  }
+}
+@media (max-width: 902px) {
+  html {
+    font-size: 140.625px;
+  }
+}
+@media (max-width: 802px) {
+  html {
+    font-size: 125px;
+  }
+}
+@media (max-width: 775px) {
+  html {
+    font-size: 120.78125px;
+  }
+}
+@media (max-width: 770px) {
+  html {
+    font-size: 120px;
+  }
+}
+@media (max-width: 738px) {
+  html {
+    font-size: 115px;
+  }
+}
+@media (max-width: 734px) {
+  html {
+    font-size: 114.375px;
+  }
+}
+@media (max-width: 733px) {
+  html {
+    font-size: 114.21875px;
+  }
+}
+@media (max-width: 669px) {
+  html {
+    font-size: 104.21875px;
+  }
+}
+@media (max-width: 642px) {
+  html {
+    font-size: 100px;
+  }
+}
+@media (max-width: 602px) {
+  html {
+    font-size: 93.75px;
+  }
+}
+@media (max-width: 570px) {
+  html {
+    font-size: 88.75px;
+  }
+}
+@media (max-width: 535px) {
+  html {
+    font-size: 83.28124999999999px;
+  }
+}
+@media (max-width: 437px) {
+  html {
+    font-size: 67.96875px;
+  }
+}
+@media (max-width: 416px) {
+  html {
+    font-size: 64.6875px;
+  }
+}
+@media (max-width: 413px) {
+  html {
+    font-size: 64.21875px;
+  }
+}
+@media (max-width: 386px) {
+  html {
+    font-size: 60px;
+  }
+}
+@media (max-width: 377px) {
+  html {
+    font-size: 58.59374999999999px;
+  }
+}
+@media (max-width: 362px) {
+  html {
+    font-size: 56.25px;
+  }
+}
+@media (max-width: 322px) {
+  html {
+    font-size: 50px;
+  }
+}
+.clr {
+  clear: both;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.flt {
+  float: left;
+}
+.frt {
+  float: right;
+}
+/*# sourceMappingURL=base.css.map */

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.onload=function(){
+				var oSub=document.getElementsByClassName("a9")[0];
+				oSub.onclick=function(){
+					var iPsw=getCookie("");
+					var iUser=document.cookie.split("=")[0];
+					var oLogins=document.getElementsByClassName("a4")[0];
+					var oPassword=document.getElementsByClassName("a5")[0];
+					var iLogins=oLogins.value;
+					var iPassword=oPassword.value;
+					if(iUser==iLogins&&iPsw==iPassword){
+						window.open("index.html");
+					}else{
+						alert("账号或密码错误!");
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="content">
+			<span class="paragraph">欢迎登入</span>
+			<div class="frame">
+				<div class="left">
+					<img src="img/car.jpg" alt="" />
+				</div>
+				<div class="right">
+					<span class="a1">登入</span>
+					<a class="a2" href="javascript:;">没有账号？</a>
+					<a class="a3" href="register.html" target="_blank">免费注册</a>
+					<input class="a4" type="text" name="username" value="用户名/已验证手机/邮箱">
+					<input class="a5" type="password" name="psw"><br>
+					<input class="a6" type="checkbox">
+					<span class="a7">下次自动登入</span>
+					<a class="a8" href="javascript:;">忘记密码</a>
+					<a class="a9" href="javascript:;">登入</a>
+					<span class="a10">你也可以使用以下账号登入：</span>
+					<br>
+					<a href="javascript:;" class="a11"></a>
+					<a href="javascript:;" class="a12"></a>
+				</div>	
+			</div>
+			<span class="copyRight">Copyright © 2007-2014 Aokang.cn All Rights Reserved 浙ICP备05037900号</span>
+		</div>
+	</body>
+</html>

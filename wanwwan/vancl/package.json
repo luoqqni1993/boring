@@ -1,0 +1,20 @@
+{
+  "name": "webpack-course",
+  "version": "0.0.1",
+  "description": "this is my webpack project",
+  "main": "main.js",
+  "dependencies": {
+    "browser": "^0.2.6",
+    "react-dom": "^15.4.1",
+    "react": "^15.4.1",
+    "webpack": "^1.13.3"
+  },
+  "devDependencies": {
+    "jsx-loader": "^0.13.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

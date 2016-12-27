@@ -1,0 +1,187 @@
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dd,
+dl,
+dt,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+.daohang {
+  background-color: #438eb9;
+  margin-bottom: 0;
+}
+.daohang .navbar-brand {
+  color: #fff;
+}
+.daohang .navbar-collapse .nav .renwu {
+  background: #555555;
+}
+.daohang .navbar-collapse .nav .renwu span:nth-child(1) {
+  color: #fff;
+}
+.daohang .navbar-collapse .nav .renwu span:nth-child(2) {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  border-radius: 100%;
+  background: #a0a0a0;
+  color: #fff;
+}
+.daohang .navbar-collapse .nav .lingdang {
+  background: #892e65;
+}
+.daohang .navbar-collapse .nav .lingdang span:nth-child(1) {
+  color: #fff;
+}
+.daohang .navbar-collapse .nav .lingdang span:nth-child(2) {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  border-radius: 100%;
+  background: #d15b47;
+  color: #fff;
+}
+.daohang .navbar-collapse .nav .youjian {
+  background: #2e8965;
+}
+.daohang .navbar-collapse .nav .youjian span:nth-child(1) {
+  color: #fff;
+}
+.daohang .navbar-collapse .nav .youjian span:nth-child(2) {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  border-radius: 100%;
+  background: #82af6f;
+  color: #fff;
+}
+.sNav {
+  background-color: #f5f5f5;
+  height: 40px;
+}
+.sNav div {
+  height: 100%;
+  line-height: 40px;
+}
+.sNav div .anniu {
+  height: 32px;
+  width: 41px;
+}
+.sNav div .anniu:nth-child(1) {
+  margin-left: 8px;
+}
+.sNav div:nth-child(1) {
+  border-right: 1px solid #cccccc;
+}
+.content div:nth-child(1) li {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  border-bottom: 1px solid #dddddd;
+  list-style-type: none;
+  padding-left: 30px;
+}
+.content div:nth-child(1) li span {
+  padding-right: 10px;
+}
+.content div:nth-child(2) span:nth-child(1) {
+  font-size: 21px;
+}
+.content div:nth-child(2) span {
+  display: inline-block;
+  margin-top: 10px;
+}
+.content .zhuozi1,
+.content .zhuozi2 {
+  width: 90%;
+}
+.content .zhuozi1 tr:nth-child(1),
+.content .zhuozi2 tr:nth-child(1) {
+  background: #f3f3f3;
+}
+.content .zhuozi1 tr:nth-child(even),
+.content .zhuozi2 tr:nth-child(even) {
+  background: #f9f9f9;
+}
+.content .zhuozi1 td,
+.content .zhuozi2 td {
+  height: 40px;
+}
+.content .haonan {
+  margin-top: 50px;
+  font-size: 14px;
+  color: #69aa6e;
+  border-top: 1px dotted black;
+  border-bottom: 1px dotted black;
+  height: 60px;
+  line-height: 60px;
+}
+.content .haonan span {
+  padding-right: 10px;
+}
+.content .wuyu {
+  margin-top: 50px;
+  font-size: 20px;
+  color: #918fd3;
+  border-bottom: 1px solid #d5e3ef;
+}
+.content li.active {
+  background: red;
+  color: #fff;
+}
+.content .info {
+  display: none;
+}
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid black;
+  display: inline-block;
+}
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid black;
+  display: inline-block;
+}
+/*# sourceMappingURL=style.css.map */

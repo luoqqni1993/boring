@@ -1,0 +1,375 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dd,
+dl,
+dt,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+/*.re(960px);
+.re(950px);
+.re(900px);
+.re(800px);
+.re(773px);
+.re(768px);
+.re(736px);
+.re(732px);
+.re(731px);
+.re(667px);
+.re(640px);
+.re(600px);
+.re(568px);
+.re(533px);
+.re(435px);
+.re(414px);
+.re(411px);
+.re(384px);
+.re(375px);
+.re(360px);
+.re(320px);*/
+.clr {
+  clear: both;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.flt {
+  float: left;
+}
+.frt {
+  float: right;
+}
+#app {
+  width: 100%;
+  height: 100%;
+}
+#app #wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#app #wrap header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 0.8rem;
+  max-width: 640px;
+  overflow: hidden;
+  background: #b81c22;
+  z-index: 999;
+}
+#app #wrap header .search-form {
+  width: 85%;
+  height: 0.4rem;
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  left: 0.15rem;
+  border-radius: 0.1rem;
+  overflow: hidden;
+}
+#app #wrap header .search-form .magnify {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  width: 0.3rem;
+  height: 0.3rem;
+  margin-left: 0.15rem;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  background: url(../img/search.png) no-repeat;
+  background-size: contain;
+  font-size: 0;
+}
+#app #wrap header .search-form .search-input {
+  position: absolute;
+  left: 0.7rem;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  width: 85%;
+  height: 85%;
+  font-size: 0.25rem;
+  display: inline-block;
+  border: 0;
+  outline: 0;
+}
+#app #wrap header .index-message {
+  position: absolute;
+  top: 50%;
+  right: 0.15rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  width: 0.55rem;
+  height: 0.4rem;
+  display: inline-block;
+  background: url(../img/msg.png) no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+#app #wrap section {
+  flex: 1;
+  overflow: scroll;
+  padding-top: 0.8rem;
+  padding-bottom: 0.84rem;
+  background: #f2f2f2;
+}
+#app #wrap section .swiper-container {
+  width: 100%;
+  height: 4.05rem;
+}
+#app #wrap section .swiper-container .swiper-wrapper {
+  height: 100%;
+}
+#app #wrap section .swiper-container .swiper-wrapper .swiper-slide {
+  height: 100%;
+}
+#app #wrap section .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+#app #wrap section .t10 {
+  display: block;
+  line-height: 0;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 2px;
+}
+#app #wrap section .t10 .t101 {
+  display: block;
+}
+#app #wrap section .t10 .t101 div {
+  display: block;
+}
+#app #wrap section .t10 .t101 div a {
+  display: block;
+  line-height: 0;
+  width: 100%;
+  text-decoration: none;
+}
+#app #wrap section .t10 .t101 div a img {
+  width: 100%;
+  height: auto;
+}
+#app #wrap section .t1000 {
+  display: block;
+}
+#app #wrap section .t1000 .t1001 {
+  margin: 0 1px 0 -1px;
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+  display: block;
+  float: left;
+}
+#app #wrap section .t1000 .t1001 div {
+  display: block;
+}
+#app #wrap section .t1000 .t1001 div a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+#app #wrap section .t1000 .t1001 div a img {
+  width: 100%;
+  height: auto;
+}
+#app #wrap section .allAndtop {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+#app #wrap section .allAndtop a {
+  display: block;
+}
+#app #wrap section .allAndtop a.see-all {
+  float: left;
+  margin: 0 1px 0 -1px;
+  width: 50%;
+}
+#app #wrap section .allAndtop a.see-all img {
+  width: 100%;
+  height: auto;
+}
+#app #wrap section .allAndtop a.ret-top {
+  float: right;
+  margin: 0 -1px 0 1px;
+  width: 50%;
+}
+#app #wrap section .allAndtop a.ret-top img {
+  width: 100%;
+  height: auto;
+}
+#app #wrap section .login {
+  text-align: center;
+  padding: 0.7rem 0;
+}
+#app #wrap section .login .login-btn {
+  display: inline-block;
+}
+#app #wrap section .login .login-btn a {
+  font-size: 0.26rem;
+  color: #4c4c4c;
+  line-height: 0.48rem;
+  display: inline-block;
+  background: #fff;
+  padding: 0.1rem 0.5rem;
+}
+#app #wrap section .login .login-btn a:first-child {
+  margin-right: 6px;
+}
+#app #wrap section .login .login-btn a:last-child {
+  margin-left: 6px;
+}
+#app #wrap section .footer {
+  margin-bottom: 0.1rem;
+  text-align: center;
+}
+#app #wrap section .footer .clear {
+  display: inline-block;
+  border-bottom: 1px solid #4c4d4d;
+  border-top: 1px solid #4d4d4d;
+  padding: 0.1rem 0;
+  zoom: 1;
+}
+#app #wrap section .footer .clear:before {
+  content: "";
+  display: block;
+  clear: both;
+}
+#app #wrap section .footer .clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#app #wrap section .footer .clear li {
+  float: left;
+  list-style: none;
+}
+#app #wrap section .footer .clear li a {
+  dicplay: block;
+  width: 0.8rem;
+}
+#app #wrap section .footer .clear li a img {
+  width: 100%;
+}
+#app #wrap section .footer .copyright {
+  font-size: 0.22rem;
+  color: #4c4c4c;
+  line-height: 0.26rem;
+}
+#app #wrap section .footer .copyright h3 {
+  font-size: 100%;
+  font-weight: 400;
+}
+#app #wrap footer .nav {
+  position: fixed;
+  bottom: 0;
+  max-width: 640px;
+  width: 100%;
+  height: 0.84rem;
+  border-top: 1px solid #999;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 999;
+}
+#app #wrap footer .nav:before {
+  content: "";
+  display: block;
+  clear: both;
+}
+#app #wrap footer .nav:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#app #wrap footer .nav a {
+  position: relative;
+  width: 20%;
+  height: 100%;
+  float: left;
+  color: #999;
+  text-align: center;
+  text-decoration: none;
+}
+#app #wrap footer .nav a.active {
+  color: red;
+}
+#app #wrap footer .nav a span {
+  display: block;
+  font-size: 16px;
+}
+#app #wrap footer .nav a span div {
+  font-size: 0.4rem;
+}
